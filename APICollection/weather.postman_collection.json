@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "a20b3e2a-091b-44a7-8ac3-a07679d579d7",
+		"name": "weather",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7583512"
+	},
+	"item": [
+		{
+			"name": "sign up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Emmy",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "emm8y@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Kwizera23",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "Kwizera23",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://weather.alicus.rw/weatherApp/public/api/signUp",
+					"protocol": "https",
+					"host": [
+						"weather",
+						"alicus",
+						"rw"
+					],
+					"path": [
+						"weatherApp",
+						"public",
+						"api",
+						"signUp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "emmy@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Kwizera23",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://weather.alicus.rw/weatherApp/public/api/signIn",
+					"protocol": "https",
+					"host": [
+						"weather",
+						"alicus",
+						"rw"
+					],
+					"path": [
+						"weatherApp",
+						"public",
+						"api",
+						"signIn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Weather API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "country",
+							"value": "Rwanda",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Kigali",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://weather.alicus.rw/weatherApp/public/api/weather",
+					"protocol": "https",
+					"host": [
+						"weather",
+						"alicus",
+						"rw"
+					],
+					"path": [
+						"weatherApp",
+						"public",
+						"api",
+						"weather"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
